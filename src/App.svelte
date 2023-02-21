@@ -1,19 +1,9 @@
 <script lang="ts">
-	import TailwindCSS from "./components/Tailwind.svelte";
-
-	export let name: String;
-
-	const myFunction = (str: String) => {
-		console.log(str);
-	}
-	myFunction("hi");
+	import Tailwind from "./components/Tailwind.svelte";
+	import Product from "./components/Product.svelte";
 </script>
 
 <!-- load global tailwind styles -->
-<TailwindCSS />
-
-<h1 class="text-9xl">Hello {name}!</h1>
-
-<style>
-	h1 {color: red;}
-</style>
+<Tailwind />
+<!-- product -->
+<Product />
